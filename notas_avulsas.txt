@@ -1,0 +1,37 @@
+arquivos com a x na sua extensao indica que o arquivo e um executavel
+
+como fazer um arquivo executavel
+
+- -rw-r--r-- indica que o arquivo listado e um executavel
+--------------------------------------------------------------
+
+o que e um ip
+
+e um endereco exclusivo que identifica um dispositvo ou uma rede
+
+ip - internet protocol
+----------------------------------------------------------------
+
+Comandos do Git
+
+g init - da inicio ao repositorio;
+
+g log - mostra o que foi commitado;
+
+g add - prepara os arquivos para o commit;
+
+g st (ou, git status) - mostra o status do arquivo (se esta pronto para ser commitado dentre outros);
+
+g ci -m "" -a (ou, git commit -m "" -a) -  adiciona um commit, um comentario a mudanca que foi feita dentro do arquivo.
+
+g pull - puxa do repositorio na nuvem para o repositorio remoto;
+
+g push - envia os arquivos da maquina para o repositorio que esta na nuvem;
+
+g co (ou, git checkout) - consegue alternar entre as branchs
+
+g br "nome-da-branch" - cria uma nova branch
+
+g br - lista as branchs criadas dentro do repositorio
+
+

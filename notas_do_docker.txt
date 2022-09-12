@@ -1,0 +1,62 @@
+Notas sobre o docker para continuar o treinamento
+
+o docker e uma plataforma que permite a criacao de ambientes isloados dentro de um container, que pode ser migrdado para outro host que tenha o docker instalado.
+
+Ele sobe apenas um maquina virtual ao inves de varias e dentro de dela ele roda varias aplicacoes sem que haja conflitos entre elas.
+
+Pode se dizr que ele e uma maquina virtual extremamente leve.
+-----------------------------------------------------------------------------
+
+O que sao os containers do Docker?
+
+Um container e um ambiente isolado. Esses containers possuem um conjunto de processos que sao executados apratir de uma imagem, que por sua vez, fornece, todos os arquivos necessarios para a execucao no sistema.
+
+				Virtualizacao:
+							  e um processo que consiste na criacao de uma maquina virtual que que funciona dentro de um sistema fis                              ico.
+
+							   Esse processo permite que programas sejam testados sem que isso interfira no sistema operacional do c                               omputdor que esta emulando essa maquina virtual.
+
+docekr run - quando rodamos os comando run, criamos um container
+
+docker pull - e o comando que usamos para baixar a imagem que usaremos no container;
+
+docker ps - lista os comandos criados;
+-----------------------------------------------------------------------------------------------------
+
+diferencas entre imagem e container no Docker (Terminologias do docker);
+
+- images - e o arquivo que roda dentro do conatiner;
+
+- container - e um ambiente isolado que executa a image;
+
+- Docker Daemon - e o servico do docker que se comunica com o usuario;
+
+- Docker Client - onde o usuario coloca os comandos;
+
+- Docker Hub - um registro de images do docker;
+
+- docker file - e um arquivo que contem um conjunto de comandos que o cliente coloca enquanto esta criando a image;
+
+- 
+--------------------------------------------------------------------------------------------------
+
+Static sites (um desenvolvimento real com Docker)
+
+para criar um static site, deve-se baixar primeiro a imagem que sera usada para a aplicacao com as flags rm para remover automaticamente o container quando sairmos da aplicacao e a fag it para podermos interagirmos com o terminal
+
+apos isso deve se rodar o comando docker run com as flags -d para conectar com o nosso terminal e a flag -P para exibir as portas que serao criadas com o comando, a flag --name para darmos um nome a aplicacao
+
+para vermos as portas usamos o comando docker port [NOME_DO_CONTAINER] para vermos as portas que estao disponiveis.
+
+-------------------------------------------------------------------------------------
+distincao entre images
+
+- base images - sao images que nao tem nenhuma ligacao com outra image;
+- child images - sao images criadas com base em outras images;
+
+ainda ha as:
+
+- oficial images - sao images que sao mantidas pela comunide e possuem um unico nome lngo (python, ubuntu etc)
+- user images - images criadas e compartilhadas pelos usuarios. Sao criadas com base images e adicionadas funcoes a elas (formato delas: user/image-name)
+
+

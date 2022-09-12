@@ -1,0 +1,35 @@
+o que e virtualizacao
+
+virtualizcao e a biparticao dos componentes de um computador em pequenas partes transformando elas em computadores virtuais;
+seria basicamente a criacao de um pc dentro de outro pc;
+
+
+
+e o um software que roda em um computador host (hopedeiro) e virtualiza esse computador host.
+
+todo comoputador host tem 3 componentes essenciais que o compoem
+
+- cpu;
+- memoria ram;
+- network (conexao que com internet ou conexao em geral);
+- armmazenamento;
+
+o hypervisor e uma camada que virualiza as composicoes do computador host em pequenas partes nas quais sao geralmetne compartilhadas entre outros usuarios.
+
+outra funcao do hypervisor e demarcar uma linha entre cada uma das maquinas virtuais para que os dado nao sejam compartilhados entre as demais maquinas (101 data security);
+
+tipos de hypervisor
+
+- bare metal (BM) - sao instalados diretamente dentro da maquina;
+- hosted - difere pelo fate de haver um sistema opercaional entre o host e a maquina virtual;
+
+o que e uma maquina virutal 
+
+ele funciona como uma maquina virtual porem e independente do localhost;
+
+beneficios em se ter VMS
+
+I - custa menos salvar algo nessas vms do que em outra plataforma;
+II - agilidade - como podemos rodar todos os recursos de um sistema operacional dentro de um Vm, podemos vr com mais facilidade o desempenho de um sistema operacinal dentro de certas cincusntacias
+III - o tempo de download dimnui muito comparado ao desempenho de uma maquina fisica;
+

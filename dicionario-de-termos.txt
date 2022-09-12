@@ -1,0 +1,5 @@
+Didicionario de termos
+
+deploy - implantar, deixar disponivel para uso
+
+ 
